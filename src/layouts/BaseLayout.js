@@ -1,14 +1,13 @@
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
-    Link
     } from "react-router-dom"
+import BottomNav from "../components/BottomNav";
 import GoldPage from "../pages/GoldPage";
 import OrderPage from "../pages/OrderPage"
 import ProfilePage from "../pages/ProfilePage";
 
-function BaseLayout(params) {
+function BaseLayout() {
     return(
         <div>
        <Switch>
@@ -22,6 +21,8 @@ function BaseLayout(params) {
                 <ProfilePage />
             </Route>
        </Switch>
+
+       <BottomNav />
        </div>
     );
 }

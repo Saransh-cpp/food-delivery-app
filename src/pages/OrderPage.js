@@ -1,4 +1,4 @@
-function OrderPage(params) {
+function OrderPage() {
     return(
         <h1>
             Order Page

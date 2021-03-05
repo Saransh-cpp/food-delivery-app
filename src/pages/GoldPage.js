@@ -1,7 +1,7 @@
 
 
 
-function GoldPage(params) {
+function GoldPage() {
     return(
         <h1>
             Order Page
