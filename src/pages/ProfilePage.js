@@ -1,7 +1,7 @@
 function ProfilePage() {
     return(
         <h1>
-            Order Page
+            Profile Page
         </h1>
     );
 }

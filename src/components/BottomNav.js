@@ -2,7 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import {RestoreIcon, FavoriteIcon, LocationOnIcon} from "@material-ui/icons/Restore";
+import FavoriteIcon from "@material-ui/icons/Restore";
+// import FavoriteIcon from "@material-ui/icons/Restore";
+// import FavoriteIcon from "@material-ui/icons/Restore";
+// import FavoriteIcon from "@material-ui/icons/Restore";
 import { useHistory, useLocation } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -36,12 +39,12 @@ export default function BottomNav() {
       <BottomNavigationAction
         label="Order"
         value="/order"
-        icon={<RestoreIcon />}
+        icon={<FavoriteIcon />}
       />
       <BottomNavigationAction
         label="Profile"
         value="/profile"
-        icon={<LocationOnIcon />}
+        icon={<FavoriteIcon />}
       />
       <BottomNavigationAction
         label="Gold"
@@ -51,12 +54,12 @@ export default function BottomNav() {
       <BottomNavigationAction
         label="Out"
         value="/out"
-        icon={<LocationOnIcon />}
+        icon={<FavoriteIcon />}
       />
       <BottomNavigationAction
         label="Search"
         value="/search"
-        icon={<LocationOnIcon />}
+        icon={<FavoriteIcon />}
       />
     </BottomNavigation>
   );

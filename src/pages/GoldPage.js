@@ -4,7 +4,7 @@
 function GoldPage() {
     return(
         <h1>
-            Order Page
+            Gold Page
         </h1>
     );
 }
