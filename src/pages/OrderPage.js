@@ -1,8 +1,13 @@
+const { default: Cuisines } = require("../components/Cuisines");
+
 function OrderPage() {
     return(
-        <h1>
+        <div>
+            <h1>
             Order Page
         </h1>
+        <Cuisines />
+        </div>
     );
 }
 
