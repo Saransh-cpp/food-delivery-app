@@ -1,4 +1,5 @@
-const { default: Cuisines } = require("../components/Cuisines");
+// const { default: Cuisines } = require("../components/Cuisines");
+import Cuisines from '../components/Cuisines';
 
 function OrderPage() {
     return(

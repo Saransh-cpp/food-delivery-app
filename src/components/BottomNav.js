@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import FavoriteIcon from "@material-ui/icons/Restore";
+import {FavoriteBorderOutlined, RestoreIcon, LocationOnOutlined} from "@material-ui/icons";
 // import FavoriteIcon from "@material-ui/icons/Restore";
 // import FavoriteIcon from "@material-ui/icons/Restore";
 // import FavoriteIcon from "@material-ui/icons/Restore";
@@ -39,27 +39,27 @@ export default function BottomNav() {
       <BottomNavigationAction
         label="Order"
         value="/order"
-        icon={<FavoriteIcon />}
-      />
-      <BottomNavigationAction
-        label="Profile"
-        value="/profile"
-        icon={<FavoriteIcon />}
-      />
-      <BottomNavigationAction
-        label="Gold"
-        value="/gold"
-        icon={<FavoriteIcon />}
+        icon={<FavoriteBorderOutlined />}
       />
       <BottomNavigationAction
         label="Out"
         value="/out"
-        icon={<FavoriteIcon />}
+        icon={<FavoriteBorderOutlined />}
+      />
+      <BottomNavigationAction
+        label="Gold"
+        value="/gold"
+        icon={<FavoriteBorderOutlined />}
       />
       <BottomNavigationAction
         label="Search"
         value="/search"
-        icon={<FavoriteIcon />}
+        icon={<FavoriteBorderOutlined />}
+      />
+      <BottomNavigationAction
+        label="Profile"
+        value="/profile"
+        icon={<FavoriteBorderOutlined />}
       />
     </BottomNavigation>
   );
