@@ -13,7 +13,7 @@ function App() {
 
   return (
     <Router>
-      {user ? <BaseLayout user={user}/> : <Auth setUser={setUser} />}
+      {user ? <BaseLayout user={user} setUser={setUser}/> : <Auth setUser={setUser} />}
     </Router>
   );
 }
