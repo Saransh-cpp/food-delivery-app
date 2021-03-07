@@ -1,5 +1,6 @@
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import firebase from "firebase";
+import { useEffect } from "react";
 
 const config = {
   apiKey: "AIzaSyDtS6oZab6YAdD3MXr4jCzB7WuLVYkxRKk",
@@ -23,6 +24,12 @@ const uiConfig = {
 };
 
 export default function Auth() {
+    
+    useEffect(() => {
+        firebase.auth().onAuthStateChanged(
+            (user) => setUser(user)
+        )
+      });
   return (
     <div>
       <h1>My App</h1>
