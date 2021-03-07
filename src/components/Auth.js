@@ -23,11 +23,11 @@ const uiConfig = {
   signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
 };
 
-export default function Auth() {
+export default function Auth({setUser}) {
     
     useEffect(() => {
         firebase.auth().onAuthStateChanged(
-            (user) => setUser(user)
+            (user) => {setUser(user)}
         )
       });
   return (

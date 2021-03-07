@@ -9,9 +9,10 @@ import ProfilePage from "../pages/ProfilePage";
 import OutPage from "../pages/OutPage";
 import SearchPage from "../pages/SearchPage";
 
-function BaseLayout() {
+function BaseLayout({user}) {
     return(
         <div>
+        <h1>{user ? user.displayName : ""}</h1>
        <Switch>
             <Route path="/order">
                 <OrderPage />
