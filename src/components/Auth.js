@@ -1,7 +1,7 @@
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import { useEffect } from "react";
 import firebase from "../utils/Firebase";
-import axios from '../utils/axios'
+import axios from "../utils/axios";
 
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
@@ -9,7 +9,10 @@ const uiConfig = {
   // Redirect to /signedIn after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
   signInSuccessUrl: "/signedIn",
   // We will display Google and Facebook as auth providers.
-  signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
+  signInOptions: [
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+  ],
 };
 
 export default function Auth({ setUser }) {

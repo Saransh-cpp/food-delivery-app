@@ -12,7 +12,7 @@ function OrderPage() {
     axios.get("http://localhost:5000/hotels").then((res) => {
       setHotels(res.data);
     });
-  });
+  }, []);
 
   return (
     <div>
