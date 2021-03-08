@@ -1,14 +1,20 @@
-import { Box, Card, CardContent, CardMedia, makeStyles } from "@material-ui/core";
+import {
+  Box,
+  Card,
+  CardContent,
+  CardMedia,
+  makeStyles,
+  Typography,
+} from "@material-ui/core";
 
 let useStyles = makeStyles({
-    card : {
-        margin: "20px"
-    }
-})
+  card: {
+    margin: "20px",
+  },
+});
 
 function Hotel({ hotel }) {
-
-let classes = useStyles();
+  let classes = useStyles();
 
   return (
     <Card className={classes.card}>
@@ -18,9 +24,15 @@ let classes = useStyles();
       ></CardMedia>
       <CardContent>
         <Box display="flex">
-          <Box flexGrow={1}>{hotel.name}</Box>
-          <Box>{hotel.rate}</Box>
+          <Box flexGrow={1}>
+            <Typography>{hotel.name}</Typography>
+          </Box>
+          <Box>
+            {" "}
+            <Typography>{hotel.rate}</Typography>
+          </Box>
         </Box>
+        <Typography variant="caption">{hotel.address}</Typography>
       </CardContent>
     </Card>
   );
