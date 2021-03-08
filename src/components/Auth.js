@@ -1,7 +1,6 @@
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import { useEffect } from "react";
 import firebase from "../utils/Firebase";
-// import axios from "axios";
 import axios from '../utils/axios'
 
 const uiConfig = {
@@ -30,8 +29,8 @@ export default function Auth({ setUser }) {
   });
   return (
     <div>
-      <h1>My App</h1>
-      <p>Please sign-in:</p>
+      <h1>Food delivery app</h1>
+      <p>Please sign-in first</p>
       <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
     </div>
   );
