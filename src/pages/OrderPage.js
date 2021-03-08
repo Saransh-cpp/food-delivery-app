@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ChipView from "../components/Chips";
+import Hotel from "../components/Hotel";
 // import Cuisines from "../components/Cuisines";
 import AppBarSearch from "../components/OrderPageAppBar";
 import StripeButtonComponent from "../components/StripePayment";
@@ -21,7 +22,7 @@ function OrderPage() {
       {/* <Cuisines /> */}
       <StripeButtonComponent price={100} />
       {hotels.map((hotel, index) => (
-        <h1>{hotel.name}</h1>
+        <Hotel hotel={hotel} key={index}/>
       ))}
     </div>
   );
